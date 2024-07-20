@@ -18,8 +18,12 @@ const RoomPage = () => {
     zp.joinRoom({
       container: element,
       scenario: {
-        mode: ZegoUIKitPrebuilt.VideoResolution_720P,
+        mode: ZegoUIKitPrebuilt.GroupCall,
       },
+      turnOnCameraWhenJoining: true,
+      showMyCameraToggleButton: true,
+      showAudioVideoSettingsButton: true,
+      showScreenSharingButton: true,
     });
   };
 
